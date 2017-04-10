@@ -16,9 +16,13 @@ Once you've instalaled VirtualBox and Vagrant on your computer you're ready to c
 
 ## Database Info
 An initial database is automatically created for you.
+
 Database name: **dbname**
+
 Database user: **dbuser**
+
 User Password: **123**
+
 Database hostname: **localhost**
 
 ## Automated Workflow (PostCSS, webpack, BrowserSync, etc...)
