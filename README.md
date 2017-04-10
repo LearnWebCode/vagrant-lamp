@@ -14,6 +14,14 @@ Once you've instalaled VirtualBox and Vagrant on your computer you're ready to c
 6. Add this line at the bottom of your hosts file: `192.168.56.101 fictional-university.dev`
 7. Now you can visit **fictional-university.dev** in any browser. The root of this project is `/fictional-university/app`
 
+## Database Info
+An initial database is automatically created for you.
+Database name: **dbname**
+Database user: **dbuser**
+User Password: **123**
+Database hostname: **localhost**
+
+## Automated Workflow (PostCSS, webpack, BrowserSync, etc...)
 That's technically all you need to get your LAMP development environment up and running. However, my setup also leverages a few workflow tools. If you'd like to take full advantage of my setup you'll also want to install:
 
 * [Node & NPM](https://nodejs.org/en/) - Node is a free tool that can run JavaScript outside the context of a web browser.
