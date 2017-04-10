@@ -1,6 +1,7 @@
 app/*
 app/*/
 !app/wp-config.php
+!app/index.php
 !app/wp-content/
 app/wp-content/*
 app/wp-content/*/
@@ -12,6 +13,7 @@ app/wp-content/plugins/*/
 dist/*
 dist/*/
 !dist/wp-config.php
+!dist/index.php
 !dist/wp-content/
 dist/wp-content/*
 dist/wp-content/*/
