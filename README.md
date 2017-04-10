@@ -38,7 +38,7 @@ SSH Host: **192.168.56.101**
 
 SSH User: **vagrant**
 
-SSH Key: **point towards the file that lives in our project folder under puphpet/files/dot/ssh/id_rsa **
+SSH Key: **point towards the file that lives in our project folder under puphpet/files/dot/ssh/id_rsa**
 
 ## Automated Workflow (PostCSS, webpack, BrowserSync, etc...)
 That's technically all you need to get your LAMP development environment up and running. However, my setup also leverages a few workflow tools. If you'd like to take full advantage of my setup you'll also want to install:
