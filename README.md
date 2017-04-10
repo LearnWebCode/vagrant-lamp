@@ -25,6 +25,21 @@ User Password: **123**
 
 Database hostname: **localhost**
 
+## Managing Databases
+This box does not include PhpMyAdmin. Instead I recommend using Seqeul Pro (on Mac) and HeidiSQL (on Windows). Here are the settings you can use to connect.
+
+MySQL Host: **127.0.0.1**
+
+Username: **dbuser**
+
+Password: **123**
+
+SSH Host: **192.168.56.101**
+
+SSH User: **vagrant**
+
+SSH Key: **point towards the file that lives in our project folder under puphpet/files/dot/ssh/id_rsa **
+
 ## Automated Workflow (PostCSS, webpack, BrowserSync, etc...)
 That's technically all you need to get your LAMP development environment up and running. However, my setup also leverages a few workflow tools. If you'd like to take full advantage of my setup you'll also want to install:
 
