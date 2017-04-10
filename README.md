@@ -1,4 +1,4 @@
-# Brad's Quick Vagrant + WordPress Starter
+# Brad's Vagrant LAMP Dev Environment
 
 Before moving ahead with this starter environment you'll need to have a few things installed on your computer:
 
