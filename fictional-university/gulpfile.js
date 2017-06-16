@@ -31,7 +31,7 @@ gulp.task('scripts', function(callback) {
 gulp.task('watch', function() {
   browserSync.init({
     notify: false,
-    proxy: "http://fictional-university.dev"
+    proxy: settings.urlToPreview
   });
 
   gulp.watch('./**/*.php', function() {
