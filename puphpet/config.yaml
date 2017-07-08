@@ -237,7 +237,7 @@ apache:
             port: '80'
             setenvif:
                 - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
-            custom_fragment: ''
+            custom_fragment: '/var/www/puphpet/customdirectives.txt'
             ssl: '0'
             ssl_cert: LETSENCRYPT
             ssl_key: LETSENCRYPT
