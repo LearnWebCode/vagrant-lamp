@@ -300,6 +300,8 @@ php:
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
         date.timezone: UTC
+        post_max_size: 32M
+        upload_max_filesize: 32M
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
