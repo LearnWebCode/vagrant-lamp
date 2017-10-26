@@ -1,30 +1,27 @@
-app/*
-app/*/
-!app/wp-config.php
-!app/index.php
-!app/wp-content/
-app/wp-content/*
-app/wp-content/*/
-!app/wp-content/themes/
-!app/wp-content/plugins/
-app/wp-content/plugins/*
-app/wp-content/plugins/*/
+app/local.php
 
-dist/*
-dist/*/
-!dist/wp-config.php
-!dist/index.php
-!dist/wp-content/
-dist/wp-content/*
-dist/wp-content/*/
-!dist/wp-content/themes/
-!dist/wp-content/plugins/
-dist/wp-content/plugins/*
-dist/wp-content/plugins/*/
+# After your first big deploy and all of your files are already
+# on your web host you could uncomment the following items
+# app/wp-content/uploads/
+# app/wp-admin
+# app/wp-includes
 
-# White-list any plugins you DO want in version control
-!app/wp-content/plugins/advanced-custom-fields-pro/
-!dist/wp-content/plugins/advanced-custom-fields-pro/
+# You could also list the indidivual WordPress system files that
+# live in the root of our folder, for example, here are just a few
+# app/index.php
+# app/license.txt
+# app/readme.html
+# app/wp-activate.php
+# app/wp-blog-header.php
+# so on and so forth
+
+
+# Here is an example of how you could ignore the plugins folder
+# and then use the exclamation point to un-ignore only certain plugins
+# that do not auto-update and that you DO want to keep in Git.
+# app/wp-content/plugins/
+# !app/wp-content/plugins/advanced-custom-fields-pro/
+
 
 # Numerous always-ignore extensions
 *.diff
