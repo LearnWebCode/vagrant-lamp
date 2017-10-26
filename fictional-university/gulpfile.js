@@ -1,9 +1,9 @@
 var gulp = require('gulp'),
 settings = require('./settings'),
 webpack = require('webpack'),
-del = require('del'),
 browserSync = require('browser-sync').create(),
 postcss = require('gulp-postcss'),
+rgba = require('postcss-hexrgba'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
@@ -13,7 +13,7 @@ colorFunctions = require('postcss-color-function');
 
 gulp.task('styles', function() {
   return gulp.src(settings.themeLocation + 'css/style.css')
-    .pipe(postcss([cssImport, mixins, cssvars, nested, colorFunctions, autoprefixer]))
+    .pipe(postcss([cssImport, mixins, cssvars, nested, rgba, colorFunctions, autoprefixer]))
     .pipe(gulp.dest(settings.themeLocation));
 });
 
@@ -31,7 +31,8 @@ gulp.task('scripts', function(callback) {
 gulp.task('watch', function() {
   browserSync.init({
     notify: false,
-    proxy: settings.urlToPreview
+    proxy: settings.urlToPreview,
+    ghostMode: false
   });
 
   gulp.watch('./**/*.php', function() {
@@ -49,23 +50,3 @@ gulp.task('waitForStyles', ['styles'], function() {
 gulp.task('waitForScripts', ['scripts'], function() {
   browserSync.reload();
 });
-
-gulp.task('deleteDistFolder', ['styles', 'scripts'], function() {
-  return del("./dist");
-});
-
-gulp.task('copyFiles', ['deleteDistFolder'], function() {
-  var pathsToCopy = [
-    './app/**/*',
-    '!' + settings.themeLocation + 'css',
-    '!' + settings.themeLocation + 'css/**',
-    '!' + settings.themeLocation + 'js/modules',
-    '!' + settings.themeLocation + 'js/modules/**',
-    '!' + settings.themeLocation + 'js/scripts.js',
-  ]
-
-  return gulp.src(pathsToCopy)
-    .pipe(gulp.dest("./dist"));
-});
-
-gulp.task('build', ['deleteDistFolder', 'copyFiles']);
