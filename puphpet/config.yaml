@@ -90,7 +90,7 @@ server:
         - vim
         - htop
         - php-imagick
-        - php7.0-gd
+        - php7.1-gd
         - php7.0-mcrypt
 users_groups:
     install: '1'
