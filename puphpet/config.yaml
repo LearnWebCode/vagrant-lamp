@@ -230,9 +230,9 @@ apache:
         - rewrite
     vhosts:
         av_eh5v66prqxfo:
-            servername: fictional-university.dev
+            servername: fictional-university.test
             serveraliases:
-                - www.fictional-university.dev
+                - www.fictional-university.test
             docroot: /var/www/fictional-university/app
             port: '80'
             setenvif:
