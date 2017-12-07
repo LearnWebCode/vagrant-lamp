@@ -10,9 +10,9 @@ Once you've instalaled VirtualBox and Vagrant on your computer you're ready to c
 2. cd into this project's root folder
 3. Run `vagrant up`
 4. Go grab a coffee, it will take a few minutes
-5. Once it completes you'll need to edit your computer's `hosts` file to point **fictional-university.dev** to our virtual machine. On Windows your host file lives in C/Windows/System32/Drivers/etc on Mac your hosts file lives in /etc
-6. Add this line at the bottom of your hosts file: `192.168.56.101 fictional-university.dev`
-7. Now you can visit **fictional-university.dev** in any browser. The root of this project is `/fictional-university/app`
+5. Once it completes you'll need to edit your computer's `hosts` file to point **fictional-university.test** to our virtual machine. On Windows your host file lives in C/Windows/System32/Drivers/etc on Mac your hosts file lives in /etc
+6. Add this line at the bottom of your hosts file: `192.168.56.101 fictional-university.test`
+7. Now you can visit **fictional-university.test** in any browser. The root of this project is `/fictional-university/app`
 
 ## Database Info
 An initial database is automatically created for you.
