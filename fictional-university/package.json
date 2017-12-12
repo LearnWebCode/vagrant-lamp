@@ -11,25 +11,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "6.7.7",
     "@babel/core": "7.0.0-beta.34",
     "@babel/preset-env": "7.0.0-beta.34",
+    "autoprefixer": "7.2.2",
     "babel-loader": "8.0.0-beta.0",
-    "browser-sync": "2.18.8",
+    "browser-sync": "2.18.13",
     "gulp": "3.9.1",
-    "gulp-postcss": "6.4.0",
-    "path": "0.12.7",
-    "postcss-color-function": "3.0.0",
+    "gulp-postcss": "7.0.0",
+    "postcss-color-function": "4.0.1",
     "postcss-hexrgba": "1.0.0",
-    "postcss-import": "9.1.0",
-    "postcss-mixins": "5.4.1",
-    "postcss-nested": "1.0.0",
-    "postcss-simple-vars": "3.1.0",
-    "webpack": "2.2.1"
+    "postcss-import": "11.0.0",
+    "postcss-mixins": "6.2.0",
+    "postcss-nested": "3.0.0",
+    "postcss-simple-vars": "4.1.0",
+    "webpack": "3.10.0"
   },
   "dependencies": {
-    "jquery": "3.2.0",
-    "normalize.css": "5.0.0",
-    "slick-carousel": "1.6.0"
+    "jquery": "3.2.1",
+    "normalize.css": "7.0.0",
+    "slick-carousel": "1.8.1"
   }
 }
