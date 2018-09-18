@@ -368,8 +368,8 @@ mariadb:
             name: dbuser
             password: '123'
     databases:
-        mariadbnd_85ub98v5gk36:
-            name: dbname
+        mariadbnd_85ub98x5gk36:
+            name: pingpong
             sql: ''
     grants:
         mariadbng_63d7zym58asz:
