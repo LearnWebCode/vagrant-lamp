@@ -5,7 +5,7 @@ Before moving ahead with this starter environment you'll need to have a few thin
 * [VirtualBox](https://www.virtualbox.org/) - Free tool that allows you to run virtual machines on your computer.
 * [Vagrant](https://www.vagrantup.com/) - Free tool that automates the creation of development environments within a virtual machine.
 
-Once you've instalaled VirtualBox and Vagrant on your computer you're ready to continue:
+Once you've installed VirtualBox and Vagrant on your computer you're ready to continue:
 1. Open a command-line (Terminal on Mac, PowerShell or Git Bash on Windows)
 2. cd into this project's root folder
 3. Run `vagrant up`
