@@ -39,15 +39,16 @@ gulp.task('watch', function() {
   gulp.watch('./**/*.php', function() {
     browserSync.reload();
   });
-  gulp.watch(settings.themeLocation + 'css/**/*.css', ['waitForStyles']);
-  gulp.watch([settings.themeLocation + 'js/modules/*.js', settings.themeLocation + 'js/scripts.js'], ['waitForScripts']);
+  gulp.watch(settings.themeLocation + 'css/**/*.css', gulp.parallel('waitForStyles'));
+  gulp.watch([settings.themeLocation + 'js/modules/*.js', settings.themeLocation + 'js/scripts.js'], gulp.parallel('waitForScripts'));
 });
 
-gulp.task('waitForStyles', ['styles'], function() {
+gulp.task('waitForStyles', gulp.series('styles', function() {
   return gulp.src(settings.themeLocation + 'style.css')
     .pipe(browserSync.stream());
-});
+}))
 
-gulp.task('waitForScripts', ['scripts'], function() {
+gulp.task('waitForScripts', gulp.series('scripts', function(cb) {
   browserSync.reload();
-});
+  cb()
+}))
